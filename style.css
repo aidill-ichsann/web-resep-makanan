@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  background-color: #edede9;
+  color: #333;
+}
+header {
+  position: fixed;
+  background-color: #fcfcfc;
+  height: 100dvh;
+  width: 15%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+h1 {
+  width: max-content;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  margin: 20px auto;
+  font-style: italic;
+}
+h1 span {
+  margin-left: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+}
+nav div {
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px 0;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+nav div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+main {
+  position: relative;
+  left: 270px;
+  width: 80%;
+  top: 40px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  border-radius: 5px;
+  padding: 3px;
+}
+.search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+h2 {
+  margin-top: 20px;
+}
+.kategori {
+  display: flex;
+  gap: 10px;
+}
+.kategori div {
+  padding: 3px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+.kategori div:hover {
+  cursor: pointer;
+  background-color: #c2c0c0;
+}
+.container-card {
+  margin-top: 60px;
+  display: flex;
+  gap: 10px;
+}
+.card-item {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+  width: 150px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  align-items: center;
+  border-radius: 15px;
+}
+.card-item img {
+  top: -40px;
+  position: relative;
+  width: 100px;
+}
+.card-info {
+  position: relative;
+  top: -40px;
+  padding: 0 10px;
+}
+.card-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-info p,
+article p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.466);
+  font-weight: 700;
+}
+.card-foter {
+  width: 90%;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  top: -40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-foter .detail {
+  background-color: #edede9;
+  width: max-content;
+  padding: 2px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.detail:hover {
+  background-color: #c2c0c0;
+}
+
+.container-utama {
+  display: flex;
+  gap: 10px;
+}
+section {
+  margin: 40px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* width: 100%; */
+}
+.container-utama {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  width: 500px;
+  height: 210px;
+}
+article.utama {
+  position: relative;
+  width: 100%;
+  /* border: 1px solid black; */
+  left: -40px;
+  /* padding: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+aside.utama img {
+  left: -40px;
+  position: relative;
+  width: 200px;
+}
+article.utama h4 {
+  font-family: "Merienda", cursive;
+  font-size: 22px;
+  font-weight: 700;
+}
+article.utama .article-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.article-info span {
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cta{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: blueviolet;
+  cursor: pointer;
+  width: max-content;
+  /* border: 1px solid black; */
+}
+.cta button {
+  color: blueviolet;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+.container-sampingan {
+  margin: 40px auto;
+  display: block;
+}
+.container-sampingan-flex{
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  margin: 5px 0;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  width: 500px;
+}
+
+article.sampingan {
+  position: relative;
+  width: 100%;
+  left: -40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+aside.sampingan img {
+  left: -40px;
+  position: relative;
+  width: 100px;
+}
+article.sampingan h4{
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  font-weight: 700;
+}
