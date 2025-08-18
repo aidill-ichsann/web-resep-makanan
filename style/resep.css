@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  background-color: #edede9;
+  color: #333;
+}
+header {
+  position: fixed;
+  background-color: #fcfcfc;
+  height: 100dvh;
+  width: 15%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+h1 {
+  width: max-content;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  margin: 20px auto;
+  font-style: italic;
+}
+h1 span {
+  margin-left: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+}
+nav div {
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px 0;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+nav div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  border-radius: 5px;
+  padding: 3px;
+}
+.search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+/* main */
+main {
+  position: relative;
+  left: 270px;
+  width: 80%;
+  top: 40px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.resep-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
+  border-radius: 50%;
+}
+/* overlay kalimat */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1); /* transparan hitam */
+  color: white;
+  font-size: 14px;
+  opacity: 0; /* awalnya ga keliatan */
+  transition: 0.4s ease;
+}
+/* efek saat hover */
+.resep-card:hover img {
+  filter: blur(4px); /* gambar jadi blur */
+}
+
+.resep-card:hover .overlay {
+  opacity: 1; /* kalimat muncul */
+}
+
+.resep-card img {
+  /* border: 1px solid blue; */
+  width: 230px;
+  /* height: 200px; */
+}
+.detail-resep{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: yellowgreen;
+  cursor: pointer;
+  width: max-content;
+}

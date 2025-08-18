@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Nunito", sans-serif;
-  display: flex;
+  /* display: flex; */
   background-color: #edede9;
   color: #333;
 }
@@ -101,7 +101,7 @@ h2 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   position: relative;
   width: 150px;
-  height: 180px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   background-color: #fcfcfc;
@@ -110,12 +110,14 @@ h2 {
 }
 .card-item img {
   top: -40px;
-  position: relative;
+  position: absolute;
   width: 100px;
 }
 .card-info {
-  position: relative;
-  top: -40px;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 60px;
+  /* height: 650px; */
   padding: 0 10px;
 }
 .card-info h3 {
@@ -131,8 +133,8 @@ article p {
 .card-foter {
   width: 90%;
   border-top: 2px solid rgba(0, 0, 0, 0.5);
-  top: -40px;
-  position: relative;
+  bottom: 5px;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
 }
@@ -162,7 +164,7 @@ section {
   /* width: 100%; */
 }
 .container-utama {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   background-color: #fcfcfc;
   border-radius: 15px;
   width: 500px;
@@ -198,7 +200,7 @@ article.utama .article-info {
   font-size: 12px;
   font-weight: 700;
 }
-.cta{
+.cta {
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -208,6 +210,7 @@ article.utama .article-info {
   /* border: 1px solid black; */
 }
 .cta button {
+  cursor: pointer;
   color: blueviolet;
   border: none;
   outline: none;
@@ -218,8 +221,8 @@ article.utama .article-info {
   margin: 40px auto;
   display: block;
 }
-.container-sampingan-flex{
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+.container-sampingan-flex {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   display: flex;
   margin: 5px 0;
   background-color: #fcfcfc;
@@ -241,8 +244,53 @@ aside.sampingan img {
   position: relative;
   width: 100px;
 }
-article.sampingan h4{
+article.sampingan h4 {
   font-family: "Merienda", cursive;
   font-size: 18px;
   font-weight: 700;
+}
+footer {
+  background-color: #333;
+  text-align: center;
+}
+footer span {
+  color: #c2c0c0;
+}
+
+/* detail resep */
+.detail-resep {
+  display: none;
+  width: 50%;
+  position: absolute;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.detail-resep p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.detail-resep h2{
+  margin-bottom: 20px;
+}
+.detail-resep h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+.tutup {
+  position: absolute;
+  top: 10px;
+  right: 10px;  background-color: #edede9;
+  width: max-content;
+  outline: none;
+  padding: 2px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }
