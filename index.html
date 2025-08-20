@@ -37,7 +37,7 @@
     </header>
     <main>
       <div class="search">
-        <input type="text" class="search" placeholder="Cari Resep..." /><i
+        <input type="text" id="search" class="search" placeholder="Cari Resep..." /><i
           class="bx bx-search-big"
         ></i>
       </div>
@@ -49,7 +49,7 @@
         <div class="minuman">minuman</div>
       </div>
       <div class="container-card">
-        <div class="card-item">
+        <div class="card-item" >
           <img
             src="images/vecteezy_delicious-nasi-campur-a-vibrant-indonesian-rice-dish-with_55069763.png"
             alt=""
@@ -59,37 +59,37 @@
             <p>Nasi campur enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail">detail</div>
+            <div class="detail" data-nama='nasi'>detail</div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item" >
           <img src="images/sate.png" alt="" />
           <div class="card-info">
             <h3>Sate Padang</h3>
             <p>Sate padang enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail">detail</div>
+            <div class="detail" data-nama='sate'>detail</div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item" >
           <img src="images/sambal.png" alt="" />
           <div class="card-info">
             <h3>Sambal</h3>
             <p>Sambal enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail">detail</div>
+            <div class="detail" data-nama='sambal'>detail</div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item" >
           <img src="images/bakso.png" alt="" />
           <div class="card-info">
             <h3>Mie Bakso</h3>
             <p>Mie bakso enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail">detail</div>
+            <div class="detail" data-nama='bakso'>detail</div>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@
               <span>waktu penyajian - 1 jam 2 menit</span>
             </div>
             <div class="cta">
-              <button>coba resep ini</button>
+              <button class="detail" data-nama="nasi">coba resep ini</button>
               <i class="bx bx-arrow-up-right"></i>
             </div>
           </article>

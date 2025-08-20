@@ -1,0 +1,50 @@
+[
+  {
+    "judul": "Nasi Goreng Kampung",
+    "img": "../images/vecteezy_delicious-nasi-campur-a-vibrant-indonesian-rice-dish-with_55069763.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "dataset":"nasi"
+  },
+  {
+    "judul": "Sambal Ulek ",
+    "img": "../images/sambal.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"sambal"
+  },
+  {
+    "judul": "Mie Bakso",
+    "img": "../images/images/sambal.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"mie"
+  },
+  {
+    "judul": "Sate Padang",
+    "img": "../images/sate.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"sate"
+  },
+  {
+    "judul": "Rendang Daging",
+    "img": "../images/bakso.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"rendang"
+  },
+  {
+    "judul": "Gado Gado",
+    "img": "../images/sambal.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"gado"
+  },
+  {
+    "judul": "Es Cendol",
+    "img": "../images/sate.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"es"
+  },
+  {
+    "judul": "Wedang Jahe",
+    "img": "../images/sate.png",
+    "text": "Nasi goreng enak dengan resep nusantara",
+    "datset":"wedang"
+  }
+]

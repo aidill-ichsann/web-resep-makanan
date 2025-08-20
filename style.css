@@ -93,6 +93,7 @@ h2 {
   background-color: #c2c0c0;
 }
 .container-card {
+  /* position: relative; */
   margin-top: 60px;
   display: flex;
   gap: 10px;
@@ -269,6 +270,7 @@ footer span {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 li{
   margin-left: 20px;
@@ -283,6 +285,7 @@ li{
   margin-bottom: 20px;
 }
 .detail-resep h3{
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
 }
