@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  /* display: flex; */
+  background-color: #edede9;
+  color: #333;
+}
+body.card-open {
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  background-color: #fcfcfc;
+  height: 100dvh;
+  width: 15%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+h1 {
+  width: max-content;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  margin: 20px auto;
+  font-style: italic;
+}
+h1 span {
+  margin-left: 20px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+}
+nav div {
+  border: 1px solid rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px 0;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+nav div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}

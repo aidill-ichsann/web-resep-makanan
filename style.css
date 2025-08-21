@@ -11,6 +11,9 @@ body {
   background-color: #edede9;
   color: #333;
 }
+body.card-open {
+  overflow: hidden;
+}
 header {
   position: fixed;
   background-color: #fcfcfc;
@@ -78,17 +81,17 @@ main {
 h2 {
   margin-top: 20px;
 }
-.kategori {
+.container-kategori {
   display: flex;
   gap: 10px;
 }
-.kategori div {
+.container-kategori div {
   padding: 3px 15px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   margin-top: 40px;
 }
-.kategori div:hover {
+.container-kategori div:hover {
   cursor: pointer;
   background-color: #c2c0c0;
 }
@@ -160,7 +163,7 @@ article p {
 section {
   margin: 40px 0;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   /* width: 100%; */
 }
@@ -219,7 +222,7 @@ article.utama .article-info {
   font-weight: 700;
 }
 .container-sampingan {
-  margin: 40px auto;
+  margin: 40px 0;
   display: block;
 }
 .container-sampingan-flex {
@@ -228,7 +231,7 @@ article.utama .article-info {
   margin: 5px 0;
   background-color: #fcfcfc;
   border-radius: 15px;
-  width: 500px;
+  width: 300px;
 }
 
 article.sampingan {
@@ -250,6 +253,13 @@ article.sampingan h4 {
   font-size: 18px;
   font-weight: 700;
 }
+.article-sampingan-info {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
 footer {
   background-color: #333;
   text-align: center;
@@ -260,31 +270,32 @@ footer span {
 
 /* detail resep */
 .detail-resep {
-  display:block;
+  display: block;
   width: 40%;
   height: 500px;
-  position: absolute;
+  position: fixed;
   background-color: #fcfcfc;
   border-radius: 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: auto;
 }
-li{
+li {
   margin-left: 20px;
   font-size: 14px;
   font-weight: 600;
 }
-.detail-resep p{
+.detail-resep p {
   font-size: 14px;
   font-weight: 600;
 }
-.detail-resep h2{
+.detail-resep h2 {
   margin-bottom: 20px;
 }
-.detail-resep h3{
+.detail-resep h3 {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
@@ -292,7 +303,8 @@ li{
 .tutup {
   position: absolute;
   top: 10px;
-  right: 10px;  background-color: #edede9;
+  right: 10px;
+  background-color: #edede9;
   width: max-content;
   outline: none;
   padding: 2px 15px;

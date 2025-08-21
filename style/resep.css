@@ -11,6 +11,9 @@ body {
   background-color: #edede9;
   color: #333;
 }
+body.card-open {
+  overflow: hidden;
+}
 header {
   position: fixed;
   background-color: #fcfcfc;
@@ -77,57 +80,114 @@ main {
   width: 80%;
   top: 40px;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+h2{
+  margin-top: 20px;
 }
-.resep-card {
+.container-card {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+}
+.card-item {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
-  border-radius: 50%;
-}
-/* overlay kalimat */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 150px;
+  height: 170px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  background-color: #fcfcfc;
   align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.1); /* transparan hitam */
-  color: white;
-  font-size: 14px;
-  opacity: 0; /* awalnya ga keliatan */
-  transition: 0.4s ease;
+  border-radius: 15px;
+  margin: 30px 0;
 }
-/* efek saat hover */
-.resep-card:hover img {
-  filter: blur(4px); /* gambar jadi blur */
+.card-item img {
+  top: -40px;
+  position: absolute;
+  width: 100px;
 }
-
-.resep-card:hover .overlay {
-  opacity: 1; /* kalimat muncul */
+.card-info {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 60px;
+  /* height: 650px; */
+  padding: 0 10px;
 }
-
-.resep-card img {
-  /* border: 1px solid blue; */
-  width: 230px;
-  /* height: 200px; */
+.card-info h3 {
+  font-size: 16px;
+  font-weight: 700;
 }
-.detail-resep{
+.card-info p,
+article p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.466);
+  font-weight: 700;
+}
+.card-foter {
+  width: 90%;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  bottom: 5px;
+  position: absolute;
   display: flex;
-  align-items: center;
-  margin-top: 10px;
-  color: yellowgreen;
-  cursor: pointer;
+  justify-content: flex-end;
+}
+.card-foter .detail {
+  background-color: #edede9;
   width: max-content;
+  padding: 2px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.detail:hover {
+  background-color: #c2c0c0;
+}
+
+/* detail resep */
+.detail-resep {
+  display: block;
+  width: 40%;
+  height: 500px;
+  position: fixed;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: auto;
+}
+li {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.detail-resep p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.detail-resep h2 {
+  margin-bottom: 20px;
+}
+.detail-resep h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.tutup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #edede9;
+  width: max-content;
+  outline: none;
+  padding: 2px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }

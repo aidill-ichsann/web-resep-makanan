@@ -37,21 +37,25 @@
     </header>
     <main>
       <div class="search">
-        <input type="text" id="search" class="search" placeholder="Cari Resep..." /><i
-          class="bx bx-search-big"
-        ></i>
+        <input
+          type="text"
+          id="search"
+          class="search"
+          placeholder="Cari Resep..."
+          autocomplete="off"
+        /><i class="bx bx-search-big"></i>
       </div>
       <h2>Learn,Cook & Eat Your Food</h2>
-      <div class="kategori">
-        <div class="nasi">nasi</div>
-        <div class="salad">salad</div>
-        <div class="mie">mie</div>
-        <div class="minuman">minuman</div>
+      <div class="container-kategori">
+        <div class="kategori">makanan</div>
+        <div class="kategori">salad</div>
+        <div class="kategori">mie</div>
+        <div class="kategori">minuman</div>
       </div>
       <div class="container-card">
-        <div class="card-item" >
+        <div class="card-item">
           <img
-            src="images/vecteezy_delicious-nasi-campur-a-vibrant-indonesian-rice-dish-with_55069763.png"
+            src="images/nasi-campur.png"
             alt=""
           />
           <div class="card-info">
@@ -59,37 +63,37 @@
             <p>Nasi campur enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail" data-nama='nasi'>detail</div>
+            <div class="detail" data-nama="nasi">detail</div>
           </div>
         </div>
-        <div class="card-item" >
+        <div class="card-item">
           <img src="images/sate.png" alt="" />
           <div class="card-info">
             <h3>Sate Padang</h3>
             <p>Sate padang enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail" data-nama='sate'>detail</div>
+            <div class="detail" data-nama="sate">detail</div>
           </div>
         </div>
-        <div class="card-item" >
+        <div class="card-item">
           <img src="images/sambal.png" alt="" />
           <div class="card-info">
             <h3>Sambal</h3>
             <p>Sambal enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail" data-nama='sambal'>detail</div>
+            <div class="detail" data-nama="sambal">detail</div>
           </div>
         </div>
-        <div class="card-item" >
+        <div class="card-item">
           <img src="images/bakso.png" alt="" />
           <div class="card-info">
             <h3>Mie Bakso</h3>
             <p>Mie bakso enak dengan resep nusantara</p>
           </div>
           <div class="card-foter">
-            <div class="detail" data-nama='bakso'>detail</div>
+            <div class="detail" data-nama="bakso">detail</div>
           </div>
         </div>
       </div>
@@ -97,19 +101,19 @@
         <div class="container-utama">
           <aside class="utama">
             <img
-              src="images/vecteezy_delicious-nasi-campur-a-vibrant-indonesian-rice-dish-with_55069763.png"
+              src="images/nasi-campur.png"
               alt=""
             />
           </aside>
           <article class="utama">
-            <h4>Lorem ipsum <br />dolor sit amet.</h4>
+            <h4>Nasi Campur</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              velit hic facilis non eum, odio quo exercitationem consectetur
-              sequi repellat omnis .
+              Nasi campur adalah hidangan nasi yang disajikan dengan berbagai
+              lauk-pauk, sayuran, dan sambal. Hidangan ini sangat populer di
+              Indonesia dan sering disajikan dalam acara-acara spesial.
             </p>
             <div class="article-info">
-              <span>serving - 4</span>
+              <span>serving - 2</span>
               <span>waktu penyajian - 1 jam 2 menit</span>
             </div>
             <div class="cta">
@@ -124,9 +128,15 @@
               <img src="images/sambal.png" alt="" />
             </aside>
             <article class="sampingan">
-              <h4>Lorem ipsum <br />dolor sit amet.</h4>
+              <h4>Sambal Ulek</h4>
+              <div class="article-sampingan-info">
+                <span>serving - 2</span>
+                <span>waktu penyajian - 1 jam 2 menit</span>
+              </div>
               <div class="cta">
-                <button>coba resep ini</button>
+                <button class="detail" data-nama="sambal">
+                  coba resep ini
+                </button>
                 <i class="bx bx-arrow-up-right"></i>
               </div>
             </article>
@@ -136,9 +146,13 @@
               <img src="images/sate.png" alt="" />
             </aside>
             <article class="sampingan">
-              <h4>Lorem ipsum <br />dolor sit amet.</h4>
+              <h4>Sate Padang</h4>
+              <div class="article-sampingan-info">
+                <span>serving - 2</span>
+                <span>waktu penyajian - 1 jam 2 menit</span>
+              </div>
               <div class="cta">
-                <button>coba resep ini</button>
+                <button class="detail" data-nama="sate">coba resep ini</button>
                 <i class="bx bx-arrow-up-right"></i>
               </div>
             </article>
@@ -149,7 +163,7 @@
     <footer>
       <span>aidil ichsan</span>
     </footer>
-<!-- <div class="detail-resep">
+    <!-- <div class="detail-resep">
   <h2>Nasi Campur</h2>
   <h3>Bahan-bahan</h3>
   <p>

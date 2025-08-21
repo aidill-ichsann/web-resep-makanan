@@ -1,50 +1,58 @@
 [
   {
-    "judul": "Nasi Goreng Kampung",
-    "img": "../images/vecteezy_delicious-nasi-campur-a-vibrant-indonesian-rice-dish-with_55069763.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "dataset":"nasi"
+    "judul": "Nasi Campur",
+    "img": "../images/nasi-campur.png",
+    "text": "Nasi campur enak dengan resep nusantara",
+    "dataKategori": "makanan",
+    "dataset": "nasi"
   },
   {
     "judul": "Sambal Ulek ",
     "img": "../images/sambal.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"sambal"
+    "text": "Sambal Ulek enak dengan resep nusantara",
+    "dataKategori": "salad",
+    "dataset": "sambal"
   },
   {
     "judul": "Mie Bakso",
-    "img": "../images/images/sambal.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"mie"
+    "img": "../images/bakso.png",
+    "text": "Mie bakso enak dengan resep nusantara",
+    "dataKategori": "mie",
+    "dataset": "mie"
   },
   {
     "judul": "Sate Padang",
     "img": "../images/sate.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"sate"
+    "text": "Sate padang enak dengan resep nusantara",
+    "dataKategori": "makanan",
+    "dataset": "sate"
   },
   {
     "judul": "Rendang Daging",
-    "img": "../images/bakso.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"rendang"
+    "img": "../images/rendang.png",
+    "text": "Rendang daging enak dengan resep nusantara",
+    "dataKategori": "makanan",
+    "dataset": "rendang"
   },
   {
     "judul": "Gado Gado",
-    "img": "../images/sambal.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"gado"
+    "img": "../images/gado-gado.png",
+    "text": "Gado-gado enak dengan resep nusantara",
+    "dataKategori": "salad",
+    "dataset": "gado"
   },
   {
-    "judul": "Es Cendol",
-    "img": "../images/sate.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"es"
+    "judul": "Es Teler",
+    "img": "../images/es-teler.png",
+    "text": "Es Teler enak dengan resep nusantara",
+    "dataKategori": "minuman",
+    "dataset": "teler"
   },
   {
-    "judul": "Wedang Jahe",
-    "img": "../images/sate.png",
-    "text": "Nasi goreng enak dengan resep nusantara",
-    "datset":"wedang"
+    "judul": "Caramel Dingin",
+    "img": "../images/es-caramel.png",
+    "text": "Caramel Dingin enak dengan resep nusantara",
+    "dataKategori": "minuman",
+    "dataset": "caramel"
   }
 ]

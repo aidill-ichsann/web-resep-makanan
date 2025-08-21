@@ -1,14 +1,29 @@
 const resep = document.querySelector(".resep");
 resep.addEventListener("click", () => {
   window.location.href = "pages/resep.html";
-  preventDefault();
 });
+const tentang = document.querySelector(".tentang");
+tentang.addEventListener("click", () => {
+  window.location.href = "pages/tentang.html";
+});
+
 const showDetail = document.querySelectorAll(".detail");
 showDetail.forEach((e) => {
   e.addEventListener("click", () => {
     // cek card yg diklik
     const dataset = ambilDataset(e);
     bikinResep(dataset);
+    const body = document.body;
+    body.classList.add("card-open");
+    bikinResep();
+  });
+});
+
+const kategori = document.querySelectorAll(".kategori");
+kategori.forEach((e) => {
+  e.addEventListener("click", () => {
+    // console.log(e.textContent);
+    bikinMenu("dataKategori", e.textContent.toLowerCase());
   });
 });
 
@@ -70,6 +85,7 @@ async function bikinResep(dataset) {
 
       // tombol tutup
       tutup.addEventListener("click", () => {
+        body.classList.remove("card-open");
         detail.remove();
       });
 
@@ -83,29 +99,49 @@ async function bikinResep(dataset) {
 const input = document.querySelector("#search");
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    bikinMenu();
+    // jika inputan kosong
+    const input = document.querySelector("#search").value.toLowerCase();
+    if (input === "") {
+      eror("Masukkan kata kunci pencarian");
+      return;
+    }
+    bikinMenu("judul", input);
   }
 });
 
-//  function bikin element card menu
-async function bikinMenu() {
-  const data = await loadData("data/card.json");
-  // ambil falue input
-  const input = document.querySelector("#search").value.toLowerCase();
-  // hapus card sebelumnya
+// function eror
+const eror = function (pesanEror) {
   const oldCard = document.querySelectorAll(".card-item");
   oldCard.forEach((e) => {
     e.remove();
   });
+  const container = document.querySelector(".container-card");
+  const notFound = document.createElement("div");
+  notFound.classList.add("not-found");
+  notFound.textContent = pesanEror;
+  container.appendChild(notFound);
+};
+
+//  function bikin element card menu
+async function bikinMenu(key, value) {
+  // bentuk key harus berupa string
+  const data = await loadData("data/card.json");
+
+  // hapus pesan,card sebelumnya
+  eror();
+  const notFound = document.querySelector(".not-found");
+  notFound ? notFound.remove() : null;
+
   let ketemu = false;
+
   data.forEach((e) => {
-    if (e.judul.toLowerCase().includes(input)) {
-      console.log(input);
+    if (e[key].toLowerCase().includes(value)) {
+      // console.log(input);
       // bikin element
       const card = document.createElement("div");
       card.classList.add("card-item");
       const img = document.createElement("img");
-      img.setAttribute("src", "images/sate.png");
+      img.setAttribute("src", e.img);
       const info = document.createElement("div");
       info.classList.add("card-info");
       const jdlInfo = document.createElement("h3");
@@ -116,8 +152,11 @@ async function bikinMenu() {
       foter.classList.add("card-foter");
       const detail = document.createElement("div");
       detail.classList.add("detail");
-      detail.setAttribute("data-nama", e.datset);
+      detail.setAttribute("data-nama", e.dataset);
       detail.textContent = "detail";
+      detail.addEventListener("click", () => {
+        bikinResep(e.dataset);
+      });
 
       card.appendChild(img);
       info.appendChild(jdlInfo);
@@ -128,20 +167,10 @@ async function bikinMenu() {
 
       const container = document.querySelector(".container-card");
       container.appendChild(card);
-
-      const showDetail = document.querySelectorAll(".detail");
-      showDetail.forEach((e) => {
-        e.addEventListener("click", () => {
-          // cek card yg diklik
-          const dataset = ambilDataset(e);
-          bikinResep(dataset);
-        });
-      });
       ketemu = true;
     }
   });
   if (!ketemu) {
-    const container = document.querySelector(".container-card");
-    container.textContent = `Resep untuk ${input} tidak tersedia`;
+    eror("Resep tidak ditemukan");
   }
 }

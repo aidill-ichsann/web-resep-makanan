@@ -1,20 +1,17 @@
 [
   {
-    "nama": "Nasi Goreng Kampung",
+    "nama": "Nasi Campur",
     "resep": [
       "1 piring nasi putih",
-      "2 butir telur",
-      "1 potong ayam suwir / sosis",
-      "2 siung bawang putih",
-      "3 siung bawang merah",
-      "3 buah cabai rawit merah",
-      "1 sdm kecap manis",
-      "1/2 sdm kecap asin",
-      "Garam secukupnya",
-      "Minyak goreng secukupnya",
-      "Timun + kerupuk (pelengkap)"
+      "1 potong ayam goreng atau bakar",
+      "1 potong daging sapi semur atau rendang",
+      "1 butir telur rebus atau telur balado",
+      "Sayur urap atau tumis kangkung",
+      "Sambal secukupnya",
+      "Kerupuk",
+      "Bawang goreng untuk taburan"
     ],
-    "cara_masak": "Tumis bawang putih, bawang merah, dan cabai. Masukkan telur, orak-arik. Tambahkan ayam suwir lalu nasi putih. Bumbui dengan kecap manis, kecap asin, dan garam. Aduk rata hingga matang lalu sajikan."
+    "cara_masak": "Siapkan sepiring nasi putih hangat.,Tata lauk pauk di sekeliling nasi: ayam, daging sapi, telur.,Tambahkan sayuran urap atau tumis kangkung.,Siram dengan sambal sesuai selera.,Taburi bawang goreng dan lengkapi dengan kerupuk,Sajikan hangat."
   },
 
   {
@@ -96,29 +93,27 @@
     "cara_masak": "Haluskan kacang tanah, bawang putih, cabai, garam, dan gula merah. Tambahkan air matang dan air asam, aduk rata. Tata sayuran, kentang, tahu, dan telur di piring. Siram dengan bumbu kacang. Sajikan dengan kerupuk dan lontong."
   },
   {
-    "nama": "Es Cendol",
+    "nama": "Es Teler",
     "resep": [
-      "100 gram tepung beras",
-      "50 gram tepung sagu",
-      "500 ml air pandan (dari daun pandan diblender)",
-      "1/2 sdt garam",
-      "Es batu secukupnya",
-      "250 gram gula merah, disisir",
-      "200 ml santan kental",
-      "100 ml air"
+      "1 buah alpukat matang",
+      "1 buah nangka, potong kecil-kecil",
+      "1 buah kelapa muda, kerok dagingnya",
+      "100 gram kolang-kaling, iris tipis",
+      "200 ml sirup cocopandan",
+      "200 ml susu kental manis",
+      "Es serut atau es batu secukupnya"
     ],
-    "cara_masak": "Campur tepung beras, tepung sagu, air pandan, dan garam, aduk rata. Masak di api kecil sambil diaduk sampai kental. Cetak adonan ke dalam air es menggunakan cetakan cendol atau saringan. Rebus gula merah dengan sedikit air hingga larut, saring. Rebus santan dengan sedikit garam, aduk supaya tidak pecah. Sajikan cendol dengan santan, gula merah cair, dan es batu."
+    "cara_masak": "Siapkan mangkuk atau gelas besar. Masukkan alpukat, nangka, kelapa muda, dan kolang-kaling. Tambahkan sirup cocopandan dan susu kental manis sesuai selera. Aduk rata, lalu tambahkan es serut atau es batu. Sajikan segera dalam keadaan dingin."
   },
   {
-    "nama": "Wedang Jahe",
+    "nama": "Caramel Dingin",
     "resep": [
-      "2 ruas jahe, bakar dan memarkan",
-      "500 ml air",
-      "3 lembar daun pandan",
-      "2 batang serai, memarkan",
-      "3 sdm gula merah",
-      "1 sdm madu (opsional)"
+      "200 ml susu cair",
+      "2 sdm saus karamel",
+      "2 sdm gula pasir (opsional, sesuai selera)",
+      "Es batu secukupnya",
+      "Whipped cream untuk topping (opsional)"
     ],
-    "cara_masak": "Rebus air bersama jahe, serai, dan daun pandan hingga harum. Masukkan gula merah, aduk rata hingga larut. Angkat dan saring. Tambahkan madu bila suka. Sajikan hangat."
+    "cara_masak": "Siapkan gelas saji. Masukkan saus karamel di bagian dasar gelas. Tambahkan susu cair dan gula bila ingin lebih manis, aduk rata. Masukkan es batu secukupnya. Hiasi dengan whipped cream di atasnya lalu beri tambahan saus karamel. Sajikan dingin."
   }
 ]
