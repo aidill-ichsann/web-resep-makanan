@@ -7,7 +7,6 @@
 }
 body {
   font-family: "Nunito", sans-serif;
-  /* display: flex; */
   background-color: #edede9;
   color: #333;
 }
@@ -22,6 +21,9 @@ header {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+#menu {
+  display: none;
 }
 h1 {
   width: max-content;
@@ -176,7 +178,7 @@ section {
 }
 article.utama {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   /* border: 1px solid black; */
   left: -40px;
   /* padding: 5px; */
@@ -314,4 +316,77 @@ li {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  
+  header {
+    display: none;
+    z-index: 10;
+    width: 200px;
+  }
+  header h1{
+    margin-left: 60px;
+  }
+  nav{
+    /* border: 1px solid black; */
+    position: absolute;
+  }
+  main {
+    padding: 10px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+  }
+  .container-serch {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+    margin-bottom: 20px;
+  }
+  #menu {
+    position: relative;
+    z-index: 100;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .container-kategori div {
+    margin: 5px auto;
+  }
+  .container-card {
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 40px;
+    padding: 0 20px;
+  }
+  section {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-utama {
+    width: 100%;
+    height: max-content;
+    padding: 5px;
+  }
+  .article-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-sampingan {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .container-sampingan-flex {
+    width: 100%;
+  }
+  .detail-resep{
+    width: 100%;
+  }
+  footer {
+    display: block;
+  }
 }

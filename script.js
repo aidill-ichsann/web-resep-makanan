@@ -7,6 +7,12 @@ tentang.addEventListener("click", () => {
   window.location.href = "pages/tentang.html";
 });
 
+// menu di layar hp
+const menu = document.querySelector("#menu").addEventListener("click", () => {
+  const header = document.querySelector("header");
+  header.style.display = header.style.display === "flex" ? "none" : "flex";
+});
+
 const showDetail = document.querySelectorAll(".detail");
 showDetail.forEach((e) => {
   e.addEventListener("click", () => {

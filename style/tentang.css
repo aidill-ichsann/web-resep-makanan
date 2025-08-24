@@ -56,3 +56,29 @@ nav div:hover {
   background-color: #f0f0f0;
   cursor: pointer;
 }
+
+
+/* media query */
+@media screen and (max-width: 768px){
+   header {
+    display: none;
+    z-index: 10;
+    width: 200px;
+  }
+  header h1{
+    margin-left: 60px;
+  }
+  nav{
+    /* border: 1px solid black; */
+    position: absolute;
+  }
+  #menu {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    z-index: 100;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
