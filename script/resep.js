@@ -62,7 +62,6 @@ async function bikinResep(dataset) {
         li.textContent = bahan;
         listBahan.appendChild(li);
       });
-
       const masak = document.createElement("h3");
       masak.textContent = "Cara memasak :";
       const cara = document.createElement("p");
@@ -138,7 +137,7 @@ async function bikinMenu(key, value) {
       const card = document.createElement("div");
       card.classList.add("card-item");
       const img = document.createElement("img");
-      img.setAttribute("src", e.img);
+      img.setAttribute("src",`../${e.img}` );
       const info = document.createElement("div");
       info.classList.add("card-info");
       const jdlInfo = document.createElement("h3");

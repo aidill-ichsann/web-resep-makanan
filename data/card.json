@@ -1,56 +1,56 @@
 [
   {
     "judul": "Nasi Campur",
-    "img": "../images/nasi-campur.png",
+    "img": "images/nasi-campur.png",
     "text": "Nasi campur enak dengan resep nusantara",
     "dataKategori": "makanan",
     "dataset": "nasi"
   },
   {
     "judul": "Sambal Ulek ",
-    "img": "../images/sambal.png",
+    "img": "images/sambal.png",
     "text": "Sambal Ulek enak dengan resep nusantara",
     "dataKategori": "salad",
     "dataset": "sambal"
   },
   {
     "judul": "Mie Bakso",
-    "img": "../images/bakso.png",
+    "img": "images/bakso.png",
     "text": "Mie bakso enak dengan resep nusantara",
     "dataKategori": "mie",
     "dataset": "mie"
   },
   {
     "judul": "Sate Padang",
-    "img": "../images/sate.png",
+    "img": "images/sate.png",
     "text": "Sate padang enak dengan resep nusantara",
     "dataKategori": "makanan",
     "dataset": "sate"
   },
   {
     "judul": "Rendang Daging",
-    "img": "../images/rendang.png",
+    "img": "images/rendang.png",
     "text": "Rendang daging enak dengan resep nusantara",
     "dataKategori": "makanan",
     "dataset": "rendang"
   },
   {
     "judul": "Gado Gado",
-    "img": "../images/gado-gado.png",
+    "img": "images/gado-gado.png",
     "text": "Gado-gado enak dengan resep nusantara",
     "dataKategori": "salad",
     "dataset": "gado"
   },
   {
     "judul": "Es Teler",
-    "img": "../images/es-teler.png",
+    "img": "images/es-teler.png",
     "text": "Es Teler enak dengan resep nusantara",
     "dataKategori": "minuman",
     "dataset": "teler"
   },
   {
     "judul": "Caramel Dingin",
-    "img": "../images/es-caramel.png",
+    "img": "images/es-caramel.png",
     "text": "Caramel Dingin enak dengan resep nusantara",
     "dataKategori": "minuman",
     "dataset": "caramel"

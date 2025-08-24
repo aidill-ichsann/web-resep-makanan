@@ -148,6 +148,7 @@ async function bikinMenu(key, value) {
       card.classList.add("card-item");
       const img = document.createElement("img");
       img.setAttribute("src", e.img);
+      img.setAttribute("alt", e.judul);
       const info = document.createElement("div");
       info.classList.add("card-info");
       const jdlInfo = document.createElement("h3");
